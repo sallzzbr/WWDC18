@@ -8,20 +8,23 @@
 
  */
 //#-hidden-code
-public class Cookingtable{
-//#-end-hidden-code
-//#-editable-code
-    func ingredients() -> String {
-        
-        return "lemon"
-    }
-
-//#-end-editable-code
-//#-hidden-code
-}
 import PlaygroundSupport
+import UIKit
 
-PlaygroundPage.current.liveView = ViewController()
+let rightView = ViewController()
+
+func cook(recipe:String){
+    rightView.ingredients = recipe
+}
+//#-end-hidden-code
+
+cook(recipe:/*#-editable-code*/"lemon"/*#-end-editable-code*/)
+
+
+//#-hidden-code
+
+
+PlaygroundPage.current.liveView = rightView
 //#-end-hidden-code
 
 

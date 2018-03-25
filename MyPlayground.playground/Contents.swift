@@ -19,17 +19,31 @@ class MyViewController : UIViewController {
         view.addSubview(label)
         self.view = view
         
-        ingredient = "add lemon"
         
-        if(ingredient == "add lemon"){
-            recipes.append("lemon")
+        func teste(){
+            if(ingredient == "lemon"){
+                recipes.append("lemon")
+            }
+            
+            if(ingredient == "milk"){
+                recipes.append("milk")
+            }
+            
+            print(recipes)
+            
+            if recipes.contains("lemon"){
+                print("oi")
+                view.backgroundColor = .black
+            }
+            if recipes.contains("lemon") && recipes.contains("milk"){
+                print("oi")
+                view.backgroundColor = .red
+            }
         }
-        
-        ingredient = "add milk"
-        
-        if(ingredient == "add milk"){
-            recipes.append("milk")
-        }
+        ingredient = "lemon"
+        teste()
+        ingredient = "milk"
+        teste()
         
         //#-editable-code
         //#-hidden-code

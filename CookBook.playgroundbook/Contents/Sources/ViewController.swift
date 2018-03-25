@@ -1,11 +1,11 @@
 import UIKit
-import AVFoundation
+import PlaygroundSupport
 
 var recipes = [String]()
-var ingredient = String()
-var content = Cookingtable()
 
 public class ViewController: UIViewController {
+    public var ingredients: String!
+    
     override public func loadView() {
         let view = UIView()
         view.backgroundColor = .white
@@ -18,29 +18,35 @@ public class ViewController: UIViewController {
         view.addSubview(label)
         self.view = view
         
-//        if(ingredient == "add lemon"){
-//            recipes.append("lemon")
-//        }
-//
-//
-//        if(ingredient == "add milk"){
-//            recipes.append("milk")
-//        }
-        
-        if(content.ingredient() == "lemon"){
-            recipes.append("lemon")
+        func cooking(){
+            if(ingredients == "lemon"){
+                recipes.append("lemon")
+            }
+            
+            if(ingredients == "milk"){
+                recipes.append("milk")
+            }
+            
+            print(recipes)
+            
+            if recipes.contains("lemon"){
+                print("oi")
+                view.backgroundColor = .red
+            }
+            
+            if recipes.contains("milk"){
+                print("oi")
+                view.backgroundColor = .blue
+            }
+            
+            if recipes.contains("lemon") && recipes.contains("milk"){
+                print("oi")
+                view.backgroundColor = .black
+            }
         }
         
-        print(recipes)
+        cooking()
         
-        if recipes.contains("lemon"){
-            print("oi")
-            view.backgroundColor = .black
-        }
-        if recipes.contains("lemon") && recipes.contains("milk"){
-            print("oi")
-            view.backgroundColor = .red
-        }
     }
     
 }
