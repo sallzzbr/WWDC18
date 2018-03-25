@@ -7,6 +7,6 @@
 	<key>Name</key>
 	<string>MaestroHero</string>
 	<key>LiveViewMode</key>
-	<string>HiddenByDefault</string>
+	<string>VisibleByDefault</string>
 </dict>
 </plist>
