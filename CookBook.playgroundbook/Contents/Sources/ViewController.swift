@@ -3,9 +3,10 @@ import AVFoundation
 
 var recipes = [String]()
 var ingredient = String()
+var content = Cookingtable()
 
 public class ViewController: UIViewController {
-    public override func loadView() {
+    override public func loadView() {
         let view = UIView()
         view.backgroundColor = .white
         
@@ -17,16 +18,17 @@ public class ViewController: UIViewController {
         view.addSubview(label)
         self.view = view
         
-        ingredient = "add lemon"
+//        if(ingredient == "add lemon"){
+//            recipes.append("lemon")
+//        }
+//
+//
+//        if(ingredient == "add milk"){
+//            recipes.append("milk")
+//        }
         
-        if(ingredient == "add lemon"){
+        if(content.ingredient() == "lemon"){
             recipes.append("lemon")
-        }
-        
-        ingredient = "add milk"
-        
-        if(ingredient == "add milk"){
-            recipes.append("milk")
         }
         
         print(recipes)

@@ -7,16 +7,23 @@
  Welcome to my musical Playground,
 
  */
-//#-editable-code
-
-
-
-//#end-editable-code
 //#-hidden-code
+public class Cookingtable{
+//#-end-hidden-code
+//#-editable-code
+    func ingredients() -> String {
+        
+        return "lemon"
+    }
+
+//#-end-editable-code
+//#-hidden-code
+}
 import PlaygroundSupport
 
 PlaygroundPage.current.liveView = ViewController()
 //#-end-hidden-code
+
 
 
 
