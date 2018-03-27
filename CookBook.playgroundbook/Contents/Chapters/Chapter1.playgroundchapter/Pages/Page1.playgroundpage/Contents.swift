@@ -4,22 +4,28 @@
  */
 //#-end-hidden-code
 /*:
- Welcome to my musical Playground,
-
+ Welcome to my CookBook,
+ 
+ programming and cooking have a lot in common:
+ 
+ 1- I love doing both
+ 2- Are essential skills
+ 3- Have different recipes and methods
+ 4- Have their own rules, but allow you to create and be creative
+ 5- Are among my favorite things
+ 
+ This are just few examples.
+ 
+ So why not adding both together? Lets create the CookLanguage and cook/program together!
+ 
+ In the end you will know a bit of cooking, programming and of myself.
+ 
  */
 //#-hidden-code
 import PlaygroundSupport
 import UIKit
 
-let rightView = ViewController()
-
-func cook(recipe:String){
-    rightView.ingredients = recipe
-}
-//#-end-hidden-code
-
-cook(recipe:/*#-editable-code*/"lemon"/*#-end-editable-code*/)
-
+let rightView = OpenViewController()
 
 //#-hidden-code
 

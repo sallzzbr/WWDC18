@@ -1,10 +1,9 @@
 import UIKit
 import PlaygroundSupport
 
-var recipes = [String]()
-
 public class ViewController: UIViewController {
-    public var ingredients: String!
+    public var ingredients: [String]!
+    public var howTo: String!
     
     override public func loadView() {
         let view = UIView()
@@ -12,37 +11,28 @@ public class ViewController: UIViewController {
         
         let label = UILabel()
         label.frame = CGRect(x: 150, y: 200, width: 200, height: 20)
-        label.text = "Hello World!"
+        label.text = howTo
         label.textColor = .black
         
         view.addSubview(label)
         self.view = view
         
         func cooking(){
-            if(ingredients == "lemon"){
-                recipes.append("lemon")
-            }
-            
-            if(ingredients == "milk"){
-                recipes.append("milk")
-            }
-            
-            print(recipes)
-            
-            if recipes.contains("lemon"){
+            if ingredients.contains("lemon"){
                 print("oi")
                 view.backgroundColor = .red
             }
             
-            if recipes.contains("milk"){
+            if ingredients.contains("milk"){
                 print("oi")
                 view.backgroundColor = .blue
             }
             
-            if recipes.contains("lemon") && recipes.contains("milk"){
-                print("oi")
+            if ingredients.contains("lemon") && ingredients.contains("milk"){
                 view.backgroundColor = .black
+                label.textColor = .white
             }
+            
         }
         
         cooking()
