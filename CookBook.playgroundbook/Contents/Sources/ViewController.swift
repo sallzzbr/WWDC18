@@ -4,6 +4,7 @@ import PlaygroundSupport
 public class ViewController: UIViewController {
     public var ingredients: [String]!
     public var howTo: String!
+    let lemonMousse = ["lemon", "sugar", "salt", "cream", "egg"]
     
     override public func loadView() {
         let view = UIView()
@@ -18,13 +19,13 @@ public class ViewController: UIViewController {
         self.view = view
         
         func cooking(){
-            if ingredients.contains("lemon"){
-                print("oi")
+            if ingredients.contains(lemonMousse) && howTo = "mix"{
+                label.text = "Lemon Mousse"
                 view.backgroundColor = .red
             }
             
             if ingredients.contains("milk"){
-                print("oi")
+                
                 view.backgroundColor = .blue
             }
             

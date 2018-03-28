@@ -12,6 +12,7 @@ import PlaygroundSupport
 import UIKit
 
 let rightView = ViewController()
+
 let lemon = "lemon"
 let milk = "milk"
 let egg = "egg"
@@ -27,6 +28,10 @@ let creamCheese = "cream cheese"
 let crackers = "crackers"
 let vanilla = "vanilla"
 
+let bake = "bake"
+let pan = "pan"
+let mix = "mix"
+
 func cook(recipe:[String]){
     rightView.ingredients = recipe
 }
@@ -39,7 +44,7 @@ func method(technique:String){
 Here you add the ingredients
  */
 //#-hidden-code
-//#-code-completion(lemon, milk)
+//#-code-completion(lemon, milk, egg, sugar, carrot, flour, salt, bakingPowder, oil, cream, margarine, creamCheese, crackers, vanilla)
 cook(recipe:[
 //#-end-hidden-code
 //#-editable-code
@@ -52,6 +57,7 @@ cook(recipe:[
 Here you choose how your recipe will be built, the method used can alter the final result
  */
 //#-hidden-code
+//#-code-completion(bake, pan, mix)
 method(technique:
 //#-end-hidden-code
 //#-editable-code
