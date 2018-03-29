@@ -23,10 +23,11 @@ let salt = "salt"
 let bakingPowder = "baking powder"
 let oil = "oil"
 let cream = "cream"
-let margarine = "margarine"
+let butter = "butter"
 let creamCheese = "cream cheese"
 let crackers = "crackers"
 let vanilla = "vanilla"
+let apple = "apple"
 
 let bake = "bake"
 let pan = "pan"
@@ -44,8 +45,8 @@ func method(technique:String){
 Here you add the ingredients
  */
 //#-hidden-code
-//#-code-completion(lemon, milk, egg, sugar, carrot, flour, salt, bakingPowder, oil, cream, margarine, creamCheese, crackers, vanilla)
 cook(recipe:[
+//#-code-completion(lemon, milk, egg, sugar, carrot, flour, salt, bakingPowder, oil, cream, margarine, creamCheese, crackers, vanilla)
 //#-end-hidden-code
 //#-editable-code
 
