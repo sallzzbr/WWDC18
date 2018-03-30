@@ -50,6 +50,18 @@ public class ViewController: UIViewController {
         let friedEggPng = "friedEgg.png"
         let friedEggImage = UIImage(named: friedEggPng)
         
+        let lemonMoussePiePng = "lemonmoussepie.png"
+        let lemonMoussePieImage = UIImage(named: lemonMoussePiePng)
+        
+        let lemonMoussePng = "lemonMousse.png"
+        let lemonMousseImage = UIImage(named: lemonMoussePng)
+        
+        let cheesecakePng = "cheesecake.png"
+        let cheesecakeImage = UIImage(named: cheesecakePng)
+        
+        let carrotCakePng = "carrotCake.png"
+        let carrotCakeImage = UIImage(named: carrotCakePng)
+        
         func foodPictures(currentImage: UIImage, posX: CGFloat, posY: CGFloat, imageWidth: CGFloat, imageHeight: CGFloat){
             let foodImageView = UIImageView(image: currentImage)
             foodImageView.alpha = 0
@@ -73,6 +85,8 @@ public class ViewController: UIViewController {
             } else if ingredients.containsSameElements(as: lemonMousse) && howTo == "mix" {
                 label.text = "Lemon Mousse"
                 view.backgroundColor = .red
+                //IMAGE
+                foodPictures(currentImage: lemonMousseImage!, posX: screenX*0.15, posY: screenY*0.3, imageWidth: 258, imageHeight: 250)
             } else if ingredients.containsSameElements(as: applePie) && howTo == "bake" {
                 label.text = "Apple pie"
                 view.backgroundColor = .blue
@@ -80,14 +94,20 @@ public class ViewController: UIViewController {
                 view.backgroundColor = .black
                 label.textColor = .white
                 label.text = "Best carrot cake in the world!"
+                //IMAGE
+                foodPictures(currentImage: carrotCakeImage!, posX: screenX*0.15, posY: screenY*0.3, imageWidth: 250, imageHeight: 166)
             } else if ingredients.containsSameElements(as: cheeseCake) || ingredients.containsSameElements(as: lemonCheeseCake) || ingredients.containsSameElements(as: appleCheeseCake) && howTo == "bake" {
                 view.backgroundColor = .white
                 label.textColor = .black
                 label.text = "Cheese cake"
+                //IMAGE
+                foodPictures(currentImage: cheesecakeImage!, posX: screenX*0.15, posY: screenY*0.3, imageWidth: 252, imageHeight: 250)
             } else if ingredients.containsSameElements(as: lemonMoussePie) && howTo == "bake" {
                 view.backgroundColor = .white
                 label.textColor = .black
                 label.text = "Lemon mousse pie"
+                //IMAGE
+                foodPictures(currentImage: lemonMoussePieImage!, posX: screenX*0.15, posY: screenY*0.3, imageWidth: 258, imageHeight: 250)
             } else if ingredients.containsSameElements(as: friedEgg) || ingredients.containsSameElements(as: butterFriedEgg) && howTo == "mix"{
                 view.backgroundColor = .yellow
                 label.textColor = .black
