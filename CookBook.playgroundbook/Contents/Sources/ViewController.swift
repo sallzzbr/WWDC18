@@ -31,8 +31,8 @@ public class ViewController: UIViewController {
         view.backgroundColor = .white
         
         let label = UILabel()
-        label.frame = CGRect(x: screenX*0.2, y: screenY*0.6, width: 400, height: 100)
-        label.font = UIFont(name: "SinhalaSangamMN", size: 20)
+        label.frame = CGRect(x: screenX*0.05, y: screenY*0.55, width: 400, height: 150)
+        label.font = UIFont(name: "SinhalaSangamMN", size: 24)
         label.text = howTo
         label.textColor = .black
         label.alpha = 1
@@ -43,10 +43,10 @@ public class ViewController: UIViewController {
         let friedEggPng = "friedEgg.png"
         let friedEggImage = UIImage(named: friedEggPng)
         
-        func foodPictures(currentImage: UIImage){
+        func foodPictures(currentImage: UIImage, posX: CGFloat, posY: CGFloat, imageWidth: CGFloat, imageHeight: CGFloat){
             let foodImageView = UIImageView(image: currentImage)
             foodImageView.alpha = 0
-            foodImageView.frame = CGRect(x: screenX*0.15,y: screenY*0.35, width: 224, height: 200)
+            foodImageView.frame = CGRect(x: posX,y: posY, width: imageWidth, height: imageHeight)
             view.addSubview(foodImageView)
             UIView.animate(withDuration: 3) {
                 foodImageView.alpha = 1
@@ -60,9 +60,9 @@ public class ViewController: UIViewController {
             if ingredients.containsSameElements(as: friedEgg) || ingredients.containsSameElements(as: butterFriedEgg) && howTo == "pan"{
                 view.backgroundColor = .yellow
                 label.textColor = .black
-                label.text = "Congratulations, you've made a fried egg! Lets try more complex recipes now!"
+                label.text = "Congratulations, you've made a fried egg! Let's try more complex recipes now!"
                 //IMAGE
-                foodPictures(currentImage: friedEggImage!)
+                foodPictures(currentImage: friedEggImage!, posX: screenX*0.15, posY: screenY*0.3, imageWidth: 224, imageHeight: 200)
                 //ANIMATION
                 
             }
