@@ -46,7 +46,8 @@ Here you add the ingredients
  */
 //#-hidden-code
 cook(recipe:[
-//#-code-completion(lemon, milk, egg, sugar, carrot, flour, salt, bakingPowder, oil, cream, margarine, creamCheese, crackers, vanilla)
+//#-code-completion(everything, hide)
+//#-code-completion(everything, show, lemon,milk,egg,sugar,carrot,flour, salt, bakingPowder, oil, cream, margarine, creamCheese, crackers,vanilla)
 //#-end-hidden-code
 //#-editable-code
 
@@ -58,7 +59,8 @@ cook(recipe:[
 Here you choose how your recipe will be built, the method used can alter the final result
  */
 //#-hidden-code
-//#-code-completion(bake, pan, mix)
+//#-code-completion(everything, hide)
+//#-code-completion(everything, bake, pan, mix)
 method(technique:
 //#-end-hidden-code
 //#-editable-code
