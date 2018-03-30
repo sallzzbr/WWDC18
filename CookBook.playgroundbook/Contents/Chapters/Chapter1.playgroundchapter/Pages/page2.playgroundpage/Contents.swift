@@ -42,7 +42,7 @@ func method(technique:String){
 }
 //#-end-hidden-code
 /*:
-Here you add the ingredients
+ Here you add the ingredients, just add the names followed by a comma. (Example: Egg, oil)
  */
 //#-hidden-code
 cook(recipe:[
@@ -56,7 +56,7 @@ cook(recipe:[
 ])
 //#-end-hidden-code
 /*:
-Here you choose how your recipe will be built, the method used can alter the final result
+Here you choose how your recipe will be built, the method used can alter the final result. You can only use one.
  */
 //#-hidden-code
 //#-code-completion(everything, hide)
@@ -69,6 +69,12 @@ method(technique:
 //#-hidden-code
 )
 //#-end-hidden-code
+/*:
+ The beauty about cooking and programming is that you can try different formulas for the same product. There are different recipes for a bread or a fried egg, also for an app. I could've done this playgroundBook with different frameworks.
+ Sometimes you will only know wich option is better after doing and testing it. When I learn a knew recipe I am always eager to learn new ones. I hope this book open your appetite for good food, knowledge and programming.
+ Best regards,
+ PS: I added my favourite recipes here(Cheesecake, eggs, lemon mousse,  brazilian carrot cake and apple pie), but there are many possibilities, some that I couldnt predict feel free to create and inovate!
+ */
 //#-hidden-code
 
 
