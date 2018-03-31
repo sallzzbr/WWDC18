@@ -5,7 +5,7 @@ Copyright Antônio Salgado 2018. All Rights Reserved.
 //#-end-hidden-code
 
 /*:
-If you need some help with the recipes, here are the ones I've registered. This are my favorites!
+If you need some help with the recipes, here are the ones I've registered just like a common documentation. This are my favorites!
 
  ## Lemon Mousse:
  lemon, sugar, salt, cream, egg
