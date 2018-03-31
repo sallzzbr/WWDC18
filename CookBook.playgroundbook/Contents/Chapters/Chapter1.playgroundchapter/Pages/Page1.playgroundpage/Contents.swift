@@ -15,7 +15,7 @@
  This playgroundbook is about cooking, programming and me. I've added a few ingredients and cooking methods on the next page. This are ingredients from my
  favorite recipes, feel free to guess them, try some variants or create entire new things!
  
- In the end you will learn a bit of cooking, programming and of me. Go to the next page and enjoy yourself!
+ In the end you will learn a bit of cooking, programming and of me. **Go to the next page and enjoy yourself!**
  
  */
 
